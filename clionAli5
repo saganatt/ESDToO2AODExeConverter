@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#https://intellij-support.jetbrains.com/hc/en-us/articles/207240985
+export ARCHITECTURE="ubuntu1804_x86-64"
+export ALIBUILD_WORK_DIR="$HOME/CERN/alice/sw"
+export ROOT_VERSION_UBUNTU=v5-34-30-alice10-1
+export ROOT_VERSION=v5-34-30-alice10
+eval "`alienv shell-helper`"
+export CLION_PROPERTIES=/home/maja/CERN/new_alieve/o2eve/root-files/baseESD_to_AOD/idea-O2.properties
+export BUILD_LINK=AliRoot-latest-aliroot5
+export ENVIRONMENT=latest-aliroot5-release
+alienv setenv AliRoot/latest-aliroot5-release AliRoot-OCDB/latest-release -c clion /home/maja/CERN/new_alieve/o2eve/root-files/baseESD_to_AOD/CMakeLists.txt
