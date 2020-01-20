@@ -276,7 +276,7 @@ void convertO2(TTree * tEsd) {
     Float_t fWidth[64];        //  time width for each channel
   } vzero;
   //
-  tO2mu->Branch("fID4vz", &vzero.fID4vz, "fID4vz/I");
+  tO2vz->Branch("fID4vz", &vzero.fID4vz, "fID4vz/I");
   tO2vz->Branch("fAdc", vzero.fAdc, "fAdc[64]/F");
   tO2vz->Branch("fTime", vzero.fTime, "fTime[64]/F");
   tO2vz->Branch("fWidth", vzero.fWidth, "fWidth[64]/F");
